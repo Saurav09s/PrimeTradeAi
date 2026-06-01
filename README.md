@@ -1,4 +1,21 @@
 # Task Management System
+# Deployment Links
+
+## Frontend (Vercel)
+
+https://prime-trade-ai-six.vercel.app/
+
+## Backend API (Render)
+
+https://primetradeai-funo.onrender.com
+
+## Swagger Documentation
+
+https://primetradeai-funo.onrender.com/api-docs
+
+## GitHub Repository
+
+https://github.com/Saurav09s/PrimeTradeAi
 
 ## Tech Stack
 

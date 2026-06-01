@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import api from "../services/api";
+import { useNavigate } from "react-router-dom";
+
+const navigate = useNavigate();
 
 export default function Dashboard() {
   const { logout } = useAuth();
@@ -148,8 +151,7 @@ export default function Dashboard() {
 
   const handleLogout = () => {
     logout();
-    window.location.href =
-      "/login";
+    navigate("/login");
   };
 
   return (

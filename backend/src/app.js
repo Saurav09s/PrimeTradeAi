@@ -26,7 +26,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://task-manager.vercel.app"
+      "https://prime-trade-ai-six.vercel.app"
     ]
   })
 );

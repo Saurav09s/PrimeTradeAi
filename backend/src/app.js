@@ -26,8 +26,16 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://prime-trade-ai-six.vercel.app"
-    ]
+      "https://prime-trade-d57dx9ln0-saurav09s-projects.vercel.app"
+    ],
+    methods: [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE",
+      "OPTIONS"
+    ],
+    credentials: true
   })
 );
 app.use(express.json());

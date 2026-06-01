@@ -3,11 +3,10 @@ import { useAuth } from "../context/AuthContext";
 import api from "../services/api";
 import { useNavigate } from "react-router-dom";
 
-const navigate = useNavigate();
 
 export default function Dashboard() {
   const { logout } = useAuth();
-
+  const navigate = useNavigate();
   const [tasks, setTasks] = useState([]);
 
   const [title, setTitle] = useState("");

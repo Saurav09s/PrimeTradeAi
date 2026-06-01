@@ -22,7 +22,14 @@ const limiter =
 app.use(helmet());
 app.use(limiter);
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://task-manager.vercel.app"
+    ]
+  })
+);
 app.use(express.json());
 app.use(
   "/api-docs",
